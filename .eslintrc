@@ -1,0 +1,49 @@
+{
+    "parser": "babel-eslint",
+    "env": {
+        "browser": true
+    },
+    "plugins": [
+        "react"
+    ],
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "airbnb",
+        "prettier",
+        "prettier/flowtype",
+        "prettier/react"
+    ],
+    "parserOptions": {
+      "ecmaFeatures": {
+        "experimentalObjectRestSpread": true
+      }
+    },
+    "rules": {
+            "indent": [2, 2],
+            "react/jsx-filename-extension": [2, { "extensions": [".js"] }],
+            "react/forbid-prop-types": 0,
+            "no-nested-ternary": 0,
+            "no-underscore-dangle": 0,
+            "no-unsafe-finally": 0,
+            "new-cap": 0,
+            "no-param-reassign": 0,
+            "no-plusplus": 0,
+            "no-confusing-arrow": 0,
+            "no-bitwise": [2, { "int32Hint": true }],
+            "no-unused-expressions": 0,
+            "no-cond-assign": [2, "except-parens"],
+            "no-useless-constructor": 0,
+            "global-require": 0,
+            "no-extra-parens": [2, "functions"],
+            "react/prefer-stateless-function": 0,
+            "generator-star-spacing": 0,
+            "no-constant-condition": ["error", { "checkLoops": false }],
+            "import/no-named-as-default": 0,
+            "import/no-named-as-default-member": 0,
+            "arrow-body-style": 0
+    },
+    "globals": {
+      "require": true,
+  }
+}
